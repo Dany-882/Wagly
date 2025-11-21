@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        header {
+            background: #ff9ac7;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .saludo {
+            margin-bottom: 20px;
+        }
+
+        .bloque-mascota {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .imagen-mascota {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+
+        .cuidados {
+            background: #ffe4f1;
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .recuadro {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .titulo-recuadro {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .botones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+        }
+
+        .opcion {
+            text-align: center;
+        }
+
+        .opcion img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="#">Inicio</a>
+        <a href="#">Mi mascota</a>
+        <a href="#">Salud</a>
+        <a href="#">Educación</a>
+        <a href="#">Noticias</a>
+        <a href="#">Comunidad</a>
+    </header>
+
+    <div class="container">
+        <div class="saludo">
+            <h2>Hola, <span id="nombreUsuario">Usuario</span></h2>
+            <p>Bienvenida al panel de cuidado de Mascotas</p>
+        </div>
+
+        <div class="bloque-mascota">
+            <img id="fotoMascota" class="imagen-mascota" src="imagenes/Belly.jpg" alt="Foto de mascota" />
+
+            <div class="cuidados">
+                <h3>Próximos cuidados</h3>
+                <ul>
+                    <li>Corte de pelo – 15 de diciembre</li>
+                    <li>Chequeo mensual – 20 de diciembre</li>
+                    <li>Vacuna anual – Enero</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recuadro">
+            <div class="titulo-recuadro">Estado de salud</div>
+            <div class="botones-grid">
+
+                <div class="opcion">
+                    <img src="imagenes/vacunas_icon.png" alt="Vacunas" />
+                    <p>Vacunas</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/peso_icon.jpg" alt="Peso" />
+                    <p>Peso</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/parasito_icon.jpg" alt="Parásitos" />
+                    <p>Parásitos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recuadro">
+            <div class="titulo-recuadro">Opciones</div>
+            <div class="botones-grid">
+
+                <div class="opcion">
+                    <img src="imagenes/primeros_auxilios.jpg" alt="Primeros auxilios" />
+                    <p>Primeros auxilios</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/qr_icon.jpg" alt="Código QR" />
+                    <p>Código QR</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/hist_med.jpg" alt="Historial Medico" />
+                    <p>Historial Medico</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/educacion_icon.jpg" alt="Educación" />
+                    <p>Educación</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/calendario_icon.jpg" alt="Calendario" />
+                    <p>Calendario</p>
+                </div>
+
+                <div class="opcion">
+                    <img src="imagenes/comunidad.jpg" alt="Comunidad" />
+                    <p>Comunidad</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
